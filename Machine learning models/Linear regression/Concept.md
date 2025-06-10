@@ -35,42 +35,43 @@ $$ \begin{aligned} f(m,c) = \sum_{i=1}^{N} (mx_i + c - y_i)^2 = (mx_1 + c - y_1)
 Setting derivatives to 0 and solving:
 
 $$  
-\begin{aligned}
+\begin{align*}
 \frac{\partial f}{\partial c} = 2(mx_1 + c - y_1) + 2(mx_2 + c - y_2) + ... \\
 = 2\sum_{i=1}^{N}(mx_i + c - y_i) = 0 \\
 m\sum_{i=1}^{N}x_i + Nc - \sum_{i=1}^{N}y_i = 0 \\
 Nc = \sum_{i=1}^{N}y_i - m\sum_{i=1}^{N}x_i \\
 c = \frac{\sum_{i=1}^{N}y_i}{N} - \frac{m\sum_{i=1}^{N}x_i}{N} \\
 c = \bar{y} - m\bar{x} 
-\end{aligned}
+\end{align*}
 $$
 
 Where \\(\bar{y}\\) and \\(\bar{x}\\) are means of \\(y\\) and \\(x\\).
 
 $$
-\begin{aligned}
+\begin{align*}
 \frac{\partial f}{\partial m} = 2(mx_1 + c - y_1)x_1 + 2(mx_2 + c - y_2)x_2 + ... \\
 = 2\sum_{i=1}^{N}(mx_i + c - y_i)x_i = 0 \\
 m\sum_{i=1}^{N}x_i^2 + c\sum_{i=1}^{N}x_i - \sum_{i=1}^{N}x_iy_i = 0 \\
-\end{aligned}
+\end{align*}
 $$
 
 Substituting for c,
 
 $$
-\begin{aligned}
+\begin{align*}
 m\sum_{i=1}^{N}x_i^2 + (\bar{y} - m\bar{x})\sum_{i=1}^{N}x_i - \sum_{i=1}^{N}x_iy_i = 0 \\
 m\sum_{i=1}^{N}x_i^2 + \bar{y}\sum_{i=1}^{N}x_i - m\bar{x}\sum_{i=1}^{N}x_i - m\sum_{i=1}^{N}x_iy_i = 0 \\
 m(\sum_{i=1}^{N}x_i^2 + \bar{x}\sum_{i=1}^{N}x_i) = \sum_{i=1}^{N}x_iy_i - \bar{y}\sum_{i=1}^{N}x_i \\
 m = \frac{\sum_{i=1}^{N}x_iy_i - \bar{y}\sum_{i=1}^{N}x_i}{\sum_{i=1}^{N}x_i^2 + \bar{x}\sum_{i=1}^{N}x_i} \\
-\end{aligned}
+\end{align*}
 $$
 
 More eligantly, 
 
 $$
-\begin{aligned}
+\begin{align*}
 m = \frac{\sum_{i=1}^{N}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{N}(x_i - \bar{x}^2)}
-\end{aligned}
+\end{align*}
 $$
 
+:)
