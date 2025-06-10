@@ -1,3 +1,6 @@
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 ---
 title: Linear Regression
 ---
@@ -7,8 +10,8 @@ Linear regression finds the best line that fits data. This is achieved by minimi
 First, let us understand how to fit the best line to given data.
 ## Fitting line to data - Simple linear regression
 We want to fit a line to the data as shown in the figure and want to ensure that it is the best fitting line, i.e. the distance from the line and all data points is as minimal as possible.
-The equation of a line is $y = mx + c$ where $m$ is the slope of the line and $c$ is the y-intercept.
-The distance between the line and a point $(x_i, y_i)$ is
+The equation of a line is \\(y = mx + c\\) where \\(m\\) is the slope of the line and \\(c\\) is the y-intercept.
+The distance between the line and a point \\((x_i, y_i)\\) is
 $$ |(mx_i + c) - y_i)| $$
 
 Suppose there are $N$ data points. We want to know the distance between each point and the line so that we can ensure the line fits well by taking into consideration all the data points. For this, we can sum up the distance between each point and line:
