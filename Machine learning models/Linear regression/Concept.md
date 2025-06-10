@@ -28,18 +28,22 @@ $$ \begin{aligned} f(m,c) = \sum_{i=1}^{N} (mx_i + c - y_i)^2 = (mx_1 + c - y_1)
 Setting derivatives to 0 and solving:
 
 $$  
-\frac{\partial f}{\partial c} = 2(mx_1 + c - y_1) + 2(mx_2 + c - y_2) + ... = 2\sum_{i=1}^{N}(mx_i + c - y_i) = 0 \\
+\begin{aligned}
+\frac{\partial f}{\partial c} = 2(mx_1 + c - y_1) + 2(mx_2 + c - y_2) + ... \\
+= 2\sum_{i=1}^{N}(mx_i + c - y_i) = 0 \\
 m\sum_{i=1}^{N}x_i + Nc - \sum_{i=1}^{N}y_i = 0 \\
 Nc = \sum_{i=1}^{N}y_i - m\sum_{i=1}^{N}x_i \\
 c = \frac{\sum_{i=1}^{N}y_i}{N} - \frac{m\sum_{i=1}^{N}x_i}{N} \\
 c = \bar{y} - m\bar{x} 
+\end{aligned}
 $$
 
 Where \\(\bar{y}\\) and \\(\bar{x}\\) are means of \\(y\\) and \\(x\\).
 
 $$
 \begin{aligned}
-\frac{\partial f}{\partial m} = 2(mx_1 + c - y_1)x_1 + 2(mx_2 + c - y_2)x_2 + ... = 2\sum_{i=1}^{N}(mx_i + c - y_i)x_i = 0 \\
+\frac{\partial f}{\partial m} = 2(mx_1 + c - y_1)x_1 + 2(mx_2 + c - y_2)x_2 + ... \\
+= 2\sum_{i=1}^{N}(mx_i + c - y_i)x_i = 0 \\
 m\sum_{i=1}^{N}x_i^2 + c\sum_{i=1}^{N}x_i - \sum_{i=1}^{N}x_iy_i = 0 \\
 \end{aligned}
 $$
