@@ -27,13 +27,12 @@ $$ \begin{aligned} f(m,c) = \sum_{i=1}^{N} (mx_i + c - y_i)^2 = (mx_1 + c - y_1)
 
 Setting derivatives to 0 and solving:
 
-$$ \begin{aligned} 
+$$  
 \frac{\partial f}{\partial c} = 2(mx_1 + c - y_1) + 2(mx_2 + c - y_2) + ... = 2\sum_{i=1}^{N}(mx_i + c - y_i) = 0 \\
 m\sum_{i=1}^{N}x_i + Nc - \sum_{i=1}^{N}y_i = 0 \\
 Nc = \sum_{i=1}^{N}y_i - m\sum_{i=1}^{N}x_i \\
 c = \frac{\sum_{i=1}^{N}y_i}{N} - \frac{m\sum_{i=1}^{N}x_i}{N} \\
 c = \bar{y} - m\bar{x} 
-\end {aligned}
 $$
 
 Where \\(\bar{y}\\) and \\(\bar{x}\\) are means of \\(y\\) and \\(x\\).
@@ -60,7 +59,7 @@ More eligantly,
 
 $$
 \begin{aligned}
-m = \frac{\sum_{i=1}^{N}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{N}(x_i - \bar{x}^2)
+m = \frac{\sum_{i=1}^{N}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{N}(x_i - \bar{x}^2)}
 \end{aligned}
 $$
 
