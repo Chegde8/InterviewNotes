@@ -1,3 +1,8 @@
+---
+title: Linear Regression
+---
+# My Notes
+
 Linear regression finds the best line that fits data. This is achieved by minimizing sum of squares (least squares).
 First, let us understand how to fit the best line to given data.
 ## Fitting line to data - Simple linear regression
